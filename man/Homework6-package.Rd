@@ -10,6 +10,14 @@ Provides an S4 class for sparse numeric vectors and basic operations
 such as arithmetic, norms, and standardization without converting
 to dense format.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/Janakass3m/Homework6}
+  \item Report bugs at \url{https://github.com/Janakass3m/Homework6/issues}
+}
+
+}
 \author{
 \strong{Maintainer}: Jana Kassem \email{jana.kassem@utexas.edu}
 

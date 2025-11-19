@@ -5,8 +5,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/JanaKassem/Homework6/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JanaKassem/Homework6/actions)
-
+[![R-CMD-check.yaml](https://github.com/Janakass3m/Homework6/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Janakass3m/Homework6/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 # Homework6: Sparse Numeric Vector Class and Operations

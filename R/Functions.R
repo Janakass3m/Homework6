@@ -12,9 +12,7 @@
 #' @importFrom graphics plot grid plot.new title
 "_PACKAGE"
 
-# -----------------------------
 # sparse_numeric class
-# -----------------------------
 
 #' Sparse numeric vector class
 #'
@@ -37,9 +35,7 @@ setClass(
   )
 )
 
-# -----------------------------
 # Validity
-# -----------------------------
 
 setValidity("sparse_numeric", function(object) {
   messages = character()
@@ -61,11 +57,9 @@ setValidity("sparse_numeric", function(object) {
   if (length(messages)) messages else TRUE
 })
 
-# -----------------------------
 # Coercion (not exported)
-# -----------------------------
 
-## Coercion: numeric -> sparse_numeric
+## Coercion: numeric to sparse_numeric
 setAs("numeric", "sparse_numeric", function(from) {
   n = length(from)
   if (n == 0L) {
@@ -81,7 +75,7 @@ setAs("numeric", "sparse_numeric", function(from) {
       length = as.integer(n))
 })
 
-## Coercion: sparse_numeric -> numeric
+## Coercion: sparse_numeric to numeric
 setAs("sparse_numeric", "numeric", function(from) {
   output = numeric(from@length)
   if (length(from@pos))
@@ -89,9 +83,7 @@ setAs("sparse_numeric", "numeric", function(from) {
   output
 })
 
-# -----------------------------
 # Helper functions (not exported)
-# -----------------------------
 
 check_length = function(x, y) {
   if (x@length != y@length)
@@ -125,9 +117,7 @@ build_sparse = function(vals, idx, n) {
   }
 }
 
-# -----------------------------
 # Generics for sparse operations
-# -----------------------------
 
 #' Add two sparse numeric vectors
 #'
@@ -202,9 +192,7 @@ setGeneric("sparse_mult", function(x, y) standardGeneric("sparse_mult"))
 setGeneric("sparse_crossprod",
            function(x, y) standardGeneric("sparse_crossprod"))
 
-# -----------------------------
 # norm() and standardize() generics
-# -----------------------------
 
 #' Euclidean norm of a sparse numeric vector
 #'
@@ -243,9 +231,8 @@ setGeneric("norm", function(x) standardGeneric("norm"))
 #' @exportMethod standardize
 setGeneric("standardize", function(x) standardGeneric("standardize"))
 
-# -----------------------------
+
 # Methods for sparse operations
-# -----------------------------
 
 #' @rdname sparse_add
 setMethod("sparse_add",
@@ -299,9 +286,7 @@ setMethod("sparse_crossprod",
             sum(vx * vy)
           })
 
-# -----------------------------
 # Arithmetic operator methods
-# -----------------------------
 
 #' @rdname sparse_add
 #' @exportMethod "+"
@@ -321,9 +306,7 @@ setMethod("*",
           signature(e1 = "sparse_numeric", e2 = "sparse_numeric"),
           function(e1, e2) sparse_mult(e1, e2))
 
-# -----------------------------
 # Show and plot methods
-# -----------------------------
 
 #' Display a sparse_numeric object
 #'
@@ -385,9 +368,7 @@ setMethod("plot",
             invisible(NULL)
           })
 
-# -----------------------------
 # length() and mean() methods
-# -----------------------------
 
 #' Length of a sparse_numeric vector
 #'
@@ -429,9 +410,7 @@ setMethod("mean",
             sum(x@value) / n
           })
 
-# -----------------------------
 # norm() and standardize() methods
-# -----------------------------
 
 #' @rdname norm
 setMethod("norm",
