@@ -1,0 +1,22 @@
+Package: Homework6
+Title: Sparse Numeric Vector Class and Operations
+Version: 0.1.0
+Authors@R: 
+    person("Jana", "Kassem", email = "jana.kassem@utexas.edu", 
+           role = c("aut", "cre"))
+Description: 
+    Provides an S4 class for sparse numeric vectors along with arithmetic 
+    operations, norms, and standardization implemented without converting 
+    to dense format. Includes documentation, unit tests, and a pkgdown 
+    website for function documentation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: R (>= 4.0)
+Imports: 
+    methods,
+    graphics
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
