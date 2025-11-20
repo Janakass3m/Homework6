@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 
 [![R-CMD-check.yaml](https://github.com/Janakass3m/Homework6/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Janakass3m/Homework6/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 # Homework6: Sparse Numeric Vector Class and Operations
