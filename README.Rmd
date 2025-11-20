@@ -106,7 +106,7 @@ standardize(x)
 
 ## pkgdown Website
 
-The pkgdown documentation website will be available at: <https://JanaKassem.github.io/Homework6/>
+The pkgdown documentation website will be available at: <https://janakass3m.github.io/Homework6/>
 
 ## License
 
