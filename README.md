@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check.yaml](https://github.com/Janakass3m/Homework6/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Janakass3m/Homework6/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 # Homework6: Sparse Numeric Vector Class and Operations
@@ -114,7 +115,7 @@ standardize(x)
 ## pkgdown Website
 
 The pkgdown documentation website will be available at:
-<https://JanaKassem.github.io/Homework6/>
+<https://janakass3m.github.io/Homework6/>
 
 ## License
 
